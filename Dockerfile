@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y -q install postfix rsyslog
+    apt-get -y -q install postfix rsyslog ca-certificates
 
 EXPOSE 25
 
